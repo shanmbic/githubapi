@@ -83,7 +83,7 @@ class GithubAPI(object):
             contri_count = m
 
             if len(contributors) < m:
-                print("Only %s contributors available" % format(str(len(contributors))))
+                print("Only %s contributors available for Repo:%s" % format(str(len(contributors)), name))
                 contri_count = len(contributors)
             
             for contributor in contributors[:contri_count]:
