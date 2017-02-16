@@ -75,8 +75,9 @@ class GithubAPI(object):
 
             name = repo['name']
             owner = repo['owner']['login']
+            forks = repo['forks']
 
-            data = {'repo_name':name, 'owner':owner, 'contributors':[]}
+            data = {'repo_name':name, 'owner':owner, 'contributors':[], 'forks':forks}
 
             committer_query = self.build_committers_query(name, owner)
             contributors = self.fetch_results(committer_query)
