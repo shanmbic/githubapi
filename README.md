@@ -9,4 +9,6 @@ Run:
 
 python3 main.py org_name n m 
 
+Tests:
+python3 tests.py
  
